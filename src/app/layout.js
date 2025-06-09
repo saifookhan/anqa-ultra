@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Oxygen } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -8,6 +8,12 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const oxygen = Oxygen({
+  variable: "--font-oxygen",
+  weight: ["300", "400", "700"],
   subsets: ["latin"],
 });
 
@@ -21,7 +27,11 @@ import "antd/dist/reset.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex">{children}</body>
+      <body
+        className={`min-h-screen flex ${oxygen.variable} ${geistSans.variable} ${geistMono.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

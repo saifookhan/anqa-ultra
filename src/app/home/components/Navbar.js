@@ -44,12 +44,19 @@ export default function Navbar() {
             </svg>
           </button>
           {dropdownOpen && (
-            <div className="absolute right-0 mt-2 w-40 bg-white text-[#0a232f] rounded shadow-lg z-10 text-sm">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+            <div className="absolute right-0 mt-2 w-40 bg-[#0a232f] text-white rounded shadow-lg z-10 text-sm border border-gray-300">
+              <a
+                href="#"
+                className="block px-4 py-2 hover:bg-[#18394a] hover:text-white"
+              >
                 As consultant
               </a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                As company
+              <div className="border-t border-gray-700 my-1"></div>
+              <a
+                href="#"
+                className="block px-4 py-2 hover:bg-[#18394a] hover:text-white"
+              >
+                As a company
               </a>
             </div>
           )}

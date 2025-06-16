@@ -2,10 +2,13 @@ import { GiDiamonds } from "react-icons/gi";
 
 export default function ConsultingCapabilities() {
   return (
-    <section className="px-16 min-h-[100vh] w-full flex flex-col justify-center">
+    <section
+      id="capabillities"
+      className="px-4 min-h-[100vh] w-full flex flex-col justify-center md:px-16"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start gap-16">
-          <div className="max-w-xl">
+          <div className="max-w-full md:max-w-xl">
             <h3 className="text-3xl font-semibold mb-6">
               End to end consulting capabilities
             </h3>
@@ -16,7 +19,7 @@ export default function ConsultingCapabilities() {
             </p>
           </div>
           <div className="flex flex-col items-start">
-            <div className="flex flex-col items-start relative min-h-[400px]">
+            <div className="flex flex-col items-start relative">
               <div
                 className="absolute left-4 top-8 bottom-8 w-px z-0"
                 style={{

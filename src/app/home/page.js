@@ -9,15 +9,17 @@ import FooterSection from "./components/FooterSection";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen w-full bg-[#0a232f] text-white flex flex-col">
-      <Navbar />
-      <HeroSection />
-      <ConversationProgress />
-      <TalentsSection />
-      <ConsultingCapabilities />
-      <HowUltraWorks />
-      <TeamSection />
-      <FooterSection />
+    <div className="w-full bg-[#01121B]">
+      <div className="min-h-screen max-w-[1440px] mx-auto w-full text-white flex flex-col">
+        <Navbar />
+        <HeroSection />
+        <ConversationProgress />
+        <TalentsSection />
+        <ConsultingCapabilities />
+        <HowUltraWorks />
+        <TeamSection />
+        <FooterSection />
+      </div>
     </div>
   );
 }
